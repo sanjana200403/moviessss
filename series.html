@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link  type="images/png" rel="icon" href="https://yt3.googleusercontent.com/3BwjqJ-HvRhCdEQ9-IDhMtGmZxbG4XCKnQmLU9InTHl3U8_28N-1yap5XLxaHLA1cXdHCLaphA=s176-c-k-c0x00ffffff-no-rj">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img  width="50px" style="border-radius: 50%;" src="https://yt3.googleusercontent.com/3BwjqJ-HvRhCdEQ9-IDhMtGmZxbG4XCKnQmLU9InTHl3U8_28N-1yap5XLxaHLA1cXdHCLaphA=s176-c-k-c0x00ffffff-no-rj" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a 
+                     href="index.html" 
+                    >Movie</a></li>
+                <li><a href="series.html" 
+                    class="active" >Tv Series</a></li>
+                <li><a 
+                     href="search.html">Search</a></li>
+               
+                     
+                
+                
+                <i class="fas fa-times"
+                    id="close"></i>
+            </ul>
+        </div>
+        <div id="mobil">
+          
+            
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+       
+        
+            </section>
+            <!--  -->
+            <h2 class="main-title"> Tv Series</h2>
+            <div id="sections" class="main">
+            
+                
+            
+              
+                
+                
+            </div> 
+
+            <!--  -->
+         
+
+
+            <!--  -->
+            <script src="https://kit.fontawesome.com/75e6be35ba.js" crossorigin="anonymous"></script>
+            <script src="series.js"></script>
+            <script>
+                const bar = document.getElementById('bar')
+const nav = document.getElementById('navbar')
+const close= document.getElementById('close')
+
+if(bar){
+    bar.addEventListener('click',()=>{
+        nav.classList.add('active')
+    })
+}
+if(close){
+    close.addEventListener('click',()=>{
+        nav.classList.remove('active')
+    })
+}
+            </script>
+    
+</body>
+</html>
